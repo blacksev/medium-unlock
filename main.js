@@ -2,7 +2,7 @@
 // @name           Medium Unlocker (2023-12-06 updated)
 // @name:zh-CN     Medium解锁 (2023-12-06更新）
 // @namespace      https://github.com/blacksev
-// @version        1.1.1
+// @version        1.1.2
 // @description:zh-CN    自动检测Medium文章（包括子域名和自定义域名），替换URL为readmedium.com来解锁Medium付费文章
 // @description Automatically detect Medium articles (including subdomains and custom domains) and replace the URL with readmedium.com to unlock Medium Posts.
 // @author         blacksev
