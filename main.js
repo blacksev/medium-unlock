@@ -438,7 +438,7 @@
          */
         click: function () {
             const _this = this;
-            window.locaon.hostname = window.location.hostname.replace(/medium\.com/, _this.options.instance);
+            window.location.hostname = _this.options.instance;
         }
     };
     new DragButton().init();
