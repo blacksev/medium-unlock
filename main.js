@@ -2,11 +2,11 @@
 // @name           Medium解锁
 // @name:en        Medium Unlock
 // @name:zh        Medium解锁
-// @namespace      https://github.com/yaaprogrammer
+// @namespace      https://github.com/blacksev
 // @version        1.1
-// @description    自动检测Medium文章（包括子域名和自定义域名），替换URL为scribe.rip来解锁Medium付费文章
-// @description:en Automatically detect Medium articles (including subdomains and custom domains) and replace the URL with scribe.rip to unlock Medium Posts.
-// @author         Yaap
+// @description    自动检测Medium文章（包括子域名和自定义域名），替换URL为readmedium.com来解锁Medium付费文章
+// @description:en Automatically detect Medium articles (including subdomains and custom domains) and replace the URL with readmedium.com to unlock Medium Posts.
+// @author         blacksev
 // @match          *://*/*
 // @grant          none
 // @license        MIT
@@ -20,7 +20,7 @@
     if (document.body.outerHTML.lastIndexOf("cdn-client.medium.com") < 0) {
         return;
     }
-    const key = encodeURIComponent('Yaap:Medium Unlock:Start');
+    const key = encodeURIComponent('blacksev:Medium Unlock:Start');
     if (window[key]) {
         return;
     }
@@ -40,7 +40,7 @@
             edge: true, //是否吸附边缘，默认吸附
             extRoute: null,//标签Ext的路由，进行跳转的
             elemId: 'medium-unlock-button',//组件要加载的节点位置ID，默认加在body下
-            instance: 'scribe.rip'
+            instance: 'readmedium.com'
         },
         //系统变量集
         data: {
